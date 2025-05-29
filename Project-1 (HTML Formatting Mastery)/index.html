@@ -1,148 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Formatting Mastery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body style="margin:20px">
-    <div>
-        <h1 style="background-color: #83c183;">
-        <span style="margin-right: 50px;"><a href="#Interoduction">Interoduction</a></span>
-        <span><a href="#main-content">Main Content</a></span>
-        </h1>
-    </div>
-    <div id="Interoduction">
-        <h1>
-            Interoduction
-        </h1>
-        <img src="pic.jpg" width="100px"   alt="Photo">
-        <p>
-
-            Hello! My name is Vikash Kuamr Mehta, and I am currently pursuing a Bachelor of Computer Applications (BCA) from Meerut Institute of Technology (MIT), which is affiliated with Chaudhary Charan Singh University (CCSU), Meerut. <br>
-            As a dedicated and enthusiastic student, I am passionate about learning and exploring various areas of computer science and modern technology. <br>
-            I have a strong interest in programming, web development, and software applications, and I continuously seek opportunities to enhance my knowledge and practical skills. <br>
-
-            I have successfully completed several training programs and certification courses, including advanced Python programming and web development. <br>
-            I am also gaining hands-on experience by working on real-life projects like a Bank management System and a Campus Issue Tracker Web Application. <br>
-            These projects are helping me build expertise in technologies like Python, Flask, HTML, MySQL, and Streamlit.
-
-            With a mindset focused on learning and innovation, I aim to contribute positively to the tech industry. <br>
-            I am excited to continue my academic journey and explore internships or collaborative projects that can help me grow both personally and professionally.
-
-        </p>
-        <hr>
-        <h2><li>Contact Info</li></h2>
-        <address >
-            Bahsa Pipra, Tankuppa, Gaya (BIHAR) 824232 <br>
-            Email: <a href="mailto:vikashmehta@mail.com">vikashmehta@mail.com</a> <br>  
-            Linkedin: <a href="https://www.linkedin.com/in/mehta-g1/">Click Here</a> <br>
-            github: <a href="https://github.com/mehta-g1">Click Here</a>
-        </address>
-    </div>
-
-    <div id="main-content"></div>
-
-
-        <h1>Main Content</h1><hr>
-
-        <table border="5">
-            <thead style="font-size: 18pt;">
-                <th style="padding: 5px;"><a href="#edu" >Educational Background</a></th>
-
-                <th style="padding: 5px; margin-right: 20px;"><a href="#skill" >Skills</a></th>
-
-                <th style="padding: 5px;"><a href="#project" >Projects</a></th>
-
-                <th style="padding: 5px;"><a href="#dec" >Declaration</a></th>
-            </thead>
-        </table>
 
 
 
+    <div id="main-box">
 
-        <h2 id="edu"><u>Educational Background</u></h2>
-        <ul>
-            <table border="1px">
-                <thead>
-                    <tr style="background-color: rgb(245, 203, 148);">
-                        <th>Class/Course</th>
-                        <th>School/College</th>
-                        <th>Board/University</th>
-                        <th>Percentage</th>
-                        <th>Year</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr  style="padding: 2px;">
-                        <td>10 <sup>th</sup></td>
-                        <td>+2 High School Kariyadpur,Gaya</td>
-                        <td>Bihar school Examination Board, Patna</td>
-                        <td>63%</td>
-                        <td>April 2019-April 2020</td>
-                    </tr>
+        <div id="Interoduction" class="box2">
 
-                                        <tr >
-                        <td>12 <sup>th</sup> (PCM)</td>
-                        <td>Laloo Mandal College, Gaya</td>
-                        <td><a href="http://biharboardonline.bihar.gov.in/">Bihar school Examination Board, Patna</a></td>
-                        <td>58%</td>
-                        <td>April 2020-May 2022</td>
-                    </tr>
+            <div id="image-box">
+                <img src="pic.jpg" alt="Photo">
+            </div>
+            <hr>
+            <div class="contact-info">
+                <h2>
+                    <li>Contact Info</li>
+                </h2>
+                <i class="fa fa-phone"></i> <b> +91 72504 06015</b> <br><br>
+                <i class="fa fa-envelope"></i> <a href="mailto:vikashmehta@mail.com"><b>Vikashmehta@mail.com</b></a>
+                <br><br>
+                <i class="fa fa-map-marker"></i> Bahsa Pipra, Tankuppa, Gaya (BIHAR) 824232 <br><br>
+                <i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/mehta-g1/" target="_blank">
+                    Linkedin</a> <br> <br>
+                <i class="fa-brands fa-github"></i><a href="https://github.com/mehta-g1/"> GitHub</a>
+            </div>
+            <hr>
+            <div class="education">
+                <h2>
+                    <li>Education</li>
+                </h2>
 
-                                        <tr >
-                        <td>BCA(Bachelor in Computer Application)</td>
-                        <td><a href="https://mitmeerut.ac.in/">Meerut Institute of Technology, Meerut</a></td>
-                        <td><a href="https://ccsuniversityweb.in/">Chaudhary Charan Singh University, Meerut</a></td>
-                        <td>72.44%</td>
-                        <td><i>From June 2023 Appering</i> </td>
-                    </tr>
-                </tbody>
-            </table>
-            
-        </ul>
-        <h2 id="skill"><u>Skills</u></h2>
-        <ul>
-            <li>Interpersonal</li>
-            <li>Communication</li>
-            <li>MS Office</li>
-            <li>C,C++</li>
-            <li>DSA</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>React</li>
-            <li>Python</li>
-            <li>Django</li>
-            <li>Git-Github</li>
-            and to be continued...
-        </ul>
+                <div class="tenth">
+                    <li><b>Degree in 10<sup>th</sup></b></li>
+                    <p> <b>Duration:</b> April 2019-May 2020</p>
+                    <p>+2 High School Kariyadpur Gaya, Bihar</p>
+                    <p><i>Percentage: 63.4%</i></p>
+                </div>
 
-        <h2 id="project"><u>Projects</u></h2>
-        <ul>
-            <li><h3>Bank Management System</h3></li>
-            <p><i>(C Language)</i> | Link :<a href="https://github.com/Mehta-g1/BANK-MANAGEMENT-SYSTEM.git" target="_blank">Click Here</a></p>
-            <span></span>
-            <li>It is a Command-Line User Interface (CUI)-based software designed to manage fundamental banking operations such as account creation, deposits,
-            withdrawals, and transaction history tracking.</li>
-            <li>All operations are secured with a user-defined password, which can be created and updated as needed.</li>
-            <li>The software utilizes file handling to store account details and transaction history, ensuring that all previous data remains accessible for future sessions </li>
+                <div class="twelth">
+                    <li><b>12<sup>th</sup> (PCM) </b></li>
+                    <p><b>Duration:</b> May 2020 - June 2022</p>
+                    <p>Laloo Mandal College, Gaya</p>
+                    <p><i>Percentage: 58%</i></p>
+                </div>
+
+                <div class="bca">
+                    <li><b>BCA (Bachelor in Computer Application)</b></li>
+                    <p><b>Duration:</b> June 2023 - June 2026 <i>(Expected)</i></p>
+                    <p>Meerut Institute of Technology, Meerut</p>
+                    <p><i>Percentage: 72.44%</i></p>
+                </div>
 
 
-            <li><h3>FixMyCampus </h3></li>
-            <p><i>(HTML,CSS,Javascript,Flask(Python),Plotly,MySQL,Python)</i> | | Link :<a href="https://github.com/Mehta-g1/FixMyCampus-1.git" target="_blank">Click Here</a></p>
-            <li>Platform for university students to report and track campus maintenance issues</li>
-            <li>Features user authentication, photo uploads, and status tracking</li>
-            <li>Provides admin dashboard for maintenance teams to manage reports</li>
-            <li>Improves communication between students and facilities management</li>
-            <li>Mobile-responsive design for cross-device accessibility</li><br>
-            <b>and to be continued....</b>
-        </ul>
+            </div>
 
-        
+        </div>
 
-        <b ><h2 id="dec"><u>Declaration</u></h2></b>
-        <p><i>I hereby declare that the information provided above is true and correct to the best of my knowledge and belief.</i></p>
+
+        <div id="main-content" class="box2">
+
+
+            <div class="top">
+                <h1 class="name">Vikash Kuamr Mehta</h1>
+                <p><i>(Student At Meerut Institute of Technology, Meerut)</i></p>
+            </div>
+            <hr>
+
+            <h2 id="profile">Proile</h2>
+
+            <div class="intro">
+                A dedicated and adaptable individual skilled in programming (Python, C, C++, HTML, CSS, JavaScript,
+                Flask, MySQL) and office tools (Microsoft Word, Excel, PowerPoint, Google Workspace). <br>
+                Known for strong
+                communication, teamwork, time management, problem-solving, and organization.
+                <br>Proactive about learning
+                and maintaining professionalism while contributing positively in any work environment
+
+            </div>
+            <hr>
+
+            <div class="work-exp">
+                <h2 id="work">Work Expriences</h2>
+                <div class="rajkot">
+                    <i class="fa-solid fa-circle-dot"></i>
+                    <span class="front">Front Office Cashier at <i> (Hotel The Grand Murlidhar, Rajkot,
+                            Gujrat)</i></span>
+                    <span class="job-date">-October-2022 to March-2023</span>
+                    <br>
+                    <p class="job-desc">I served as a Cashier at the food court of Hotel The Grand Murlidhar. <br> </p>
+                    <p class="job-desc">This role demanded strong
+                        communication skills to effectively engage with and assist guests.</p>
+                </div>
+            </div>
+            <hr>
+
+
+
+
+            <div class="skills-table">
+                <h2 id="skill"><u>Skills</u></h2>
+                <table border="1">
+                    <tbody>
+                        <tr>
+                            <th>Programming Languages</th>
+                            <td>C, C++, Java, Python, JavaScript </td>
+                        </tr>
+                        <tr>
+                            <th>Frameworks/Libraries</th>
+                            <td>STD(Standerd Tamplate Library) in C++,
+                                Python(numpy,pandas,mysql.connector,streamlit,matplotlib)</td>
+                        </tr>
+                        <tr>
+                            <th>Database</th>
+                            <td>MySQL</td>
+                        </tr>
+                        <tr>
+                            <th>Soft Skills</th>
+                            <td>Communication, InterPersonal, Problem-Solving etc.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+            <h2 id="project"><u>Projects</u></h2>
+            <ul>
+                <li>
+                    <h3>Bank Management System</h3>
+                </li>
+                <p><i>(C Language)</i> | Link :<a href="https://github.com/Mehta-g1/BANK-MANAGEMENT-SYSTEM.git"
+                        target="_blank">Click Here</a></p>
+                <span></span>
+                <li>It is a Command-Line User Interface (CUI)-based software designed to manage fundamental banking
+                    operations such as account creation, deposits,
+                    withdrawals, and transaction history tracking.</li>
+                <li>All operations are secured with a user-defined password, which can be created and updated as needed.
+                </li>
+                <li>The software utilizes file handling to store account details and transaction history, ensuring that
+                    all previous data remains accessible for future sessions </li>
+
+
+                <li>
+                    <h3>FixMyCampus </h3>
+                </li>
+                <p><i>(HTML,CSS,Javascript,Flask(Python),Plotly,MySQL,Python)</i> | | Link :<a
+                        href="https://github.com/Mehta-g1/FixMyCampus-1.git" target="_blank">Click Here</a></p>
+                <li>Platform for university students to report and track campus maintenance issues</li>
+                <li>Features user authentication, photo uploads, and status tracking</li>
+                <li>Provides admin dashboard for maintenance teams to manage reports</li>
+                <li>Improves communication between students and facilities management</li>
+                <li>Mobile-responsive design for cross-device accessibility</li><br>
+                <b>and to be continued....</b>
+            </ul>
+
+
+
+            <b>
+                <h2 id="dec"><u>Declaration</u></h2>
+            </b>
+            <p><i>I hereby declare that the information provided above is true and correct to the best of my knowledge
+                    and belief.</i></p>
+        </div>
+
     </div>
 </body>
+
 </html>

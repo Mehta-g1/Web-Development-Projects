@@ -1,0 +1,31 @@
+                Hello! My name is Vikash Kuamr Mehta, and I am currently pursuing a Bachelor of Computer Applications (BCA) from Meerut Institute of Technology (MIT), which is affiliated with Chaudhary Charan Singh University (CCSU), Meerut. <br>
+                As a dedicated and enthusiastic student, I am passionate about learning and exploring various areas of computer science and modern technology. <br>
+                I have a strong interest in programming, web development, and software applications, and I continuously seek opportunities to enhance my knowledge and practical skills. <br>
+
+                I have successfully completed several training programs and certification courses, including advanced Python programming and web development. <br>
+                I am also gaining hands-on experience by working on real-life projects like a Bank management System and a Campus Issue Tracker Web Application. <br>
+                These projects are helping me build expertise in technologies like Python, Flask, HTML, MySQL, and Streamlit.
+
+                With a mindset focused on learning and innovation, I aim to contribute positively to the tech industry. <br>
+                I am excited to continue my academic journey and explore internships or collaborative projects that can help me grow both personally and professionally.
+
+
+
+
+
+
+                         <ul>
+                <li>Interpersonal</li>
+                <li>Communication</li>
+                <li>MS Office</li>
+                <li>C,C++</li>
+                <li>DSA</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>React</li>
+                <li>Python</li>
+                <li>Django</li>
+                <li>Git-Github</li>
+                and to be continued...
+            </ul>

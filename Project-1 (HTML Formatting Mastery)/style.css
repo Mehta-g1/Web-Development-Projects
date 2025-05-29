@@ -1,0 +1,85 @@
+#Interoduction{
+    border: 2px solid black;
+    padding:10px;
+    background-color: #336286;
+    width: 20%;
+}
+.top{   
+    text-align: center;
+}
+.name{
+    font-size: 75px;
+    padding: 0;
+    margin: 0;
+    line-height: 75px;
+}
+ 
+#main-box{
+    margin: 10%;
+    display: flex;
+    
+}
+tr>td,th{
+    padding:5px
+}
+.fa-solid{
+    font-size: small;
+    padding: 5px;
+}
+#main-content{
+    background-color: #f4e1e1;
+    width: 80%;
+    padding: 10px;
+    border: 2px solid black;
+}
+.front{
+    font-size: 15pt;
+    font-weight: bold;
+}
+.job-date{
+    font-style: italic;
+    padding-left: 10%;
+}
+.job-desc{
+    text-indent: 20px;
+    line-height: 5px;
+}
+#work{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#image-box{
+    width: 80%;
+    height: 220px;
+    text-align: center;
+    margin-left: 10%;
+}
+.contact-info{
+    color: white;
+    font-family: system-ui;
+}
+img{
+    width:100%;
+    margin: 0;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.education{
+    color: white;
+}
+.tenth,.twelth,.bca{
+    margin-left: 5%;
+    background-color: #467887;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    box-shadow: 0 0 2px #0d0399;
+    
+}
+.tenth>p,.twelth>p,.bca>p{
+    line-height: 14pt;
+    margin-left: 10%;
+}
