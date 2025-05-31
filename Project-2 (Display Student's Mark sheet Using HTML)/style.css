@@ -1,0 +1,104 @@
+.img-box>img{
+    width: 100px;
+    height: 100px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin-left: 10%; margin-right: 10%;
+}
+
+.main-box{
+    background-color: #f5f7fa;
+    padding-top:60px;
+    /* width: 75%; */
+    height: 100%;
+}
+
+.heading{
+    text-indent: 20px;
+}
+
+.heading-box{
+    display: flex;
+    position: relative;
+    top: -40px;
+    left:6%;
+}
+
+.sub-heading{
+    position: relative;
+    left: 34%;
+    bottom: 98px;
+}
+
+.exam-date{
+   position: relative;
+    left: 65%;
+    bottom: 85px; 
+}
+
+.class{
+   position: relative;
+    left: 40%;
+    bottom: 110px; 
+}
+
+.personal-details{
+    position: relative;
+    bottom: 40px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.cname,.cfname,.ccollege-name{
+    padding-left: 70px;
+}
+
+.roll{
+    padding-left:90px;
+}
+.croll{
+    padding-left: 140px;
+}
+
+.fname{
+    padding-left: 95px;
+}
+
+.cenroll{
+    padding-left: 155px;
+}
+
+.enroll{
+    padding-left: 40px;
+}
+
+.name{
+    padding-left: 75px;
+}
+
+.college-name{
+    padding-left:70px;
+}
+table>tbody>tr>td{
+    padding-top:5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border: 1px solid black;
+}
+table>tbody>tr>th{
+    padding:10px;
+    border: 1px solid black;
+
+}
+.table2>tr>td{
+    padding-left: 95px;
+    padding-right: 95px;
+    margin-left: 40px;
+    margin-right: 40px;
+    /* background-color: red; */
+    border: 1px solid black;
+}

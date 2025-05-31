@@ -4,59 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Marksheet using HTML</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="margin-left: 20%; margin-right: 20%;">
-
-    <div>
-        <img style="margin-left: 108px;" src="image.png" alt="CCSU Image" width="900px" height="100px"> <br>
-        
-    </div>
-    <div>
-        <span style="text-align: left;"> <u><b>Class/Course-BCA SEM-III</b></u></span> 
-
-        <span style="margin-left: 50%;"> <u><b>May-2024</b></u></span>
-    </div> <br>
-    <div>
-
-        <table border="1">
-            
-            <thead>
-                <tr>
-                    <td>Name</td>
-                    <td colspan="7">Vikash Kuamr Mehta</td>
-                </tr>
-
-                <tr>
-                    <td>Father's Name</td>
-                    <td colspan="7">Sunil Kumar Mehta</td>
-                </tr>
-                <tr>
-                    <td>Date of Birth</td>
-                    <td colspan="7">07/04/2005</td>
-                </tr>
-
-                <tr>
-                    <td>Roll Number</td>
-                    <td colspan="7">231110000645</td>
-                </tr>
-
-                <tr>
-                    <td>Enrollment Number</td>
-                    <td colspan="7">230058161</td>
-                </tr>
-                <tr>
-                    <td>College Name</td>
-                    <td colspan="7">Meerut Institute of Technology, Meerut</td>
-                </tr>
-                <tr>
-                    <td>Examination Center</td>
-                    <td colspan="7">Deevan V S Institute of Management & Technology, Meerut U.P</td>
-                </tr>
-            </thead>
-
-            <tbody>
-              
+<body>
+    <div class="main-box">
+        <div class="heading-box">
+            <div class="img-box">
+                <img src="https://scontent.fdel65-2.fna.fbcdn.net/v/t39.30808-6/375967436_268535712778668_8709894908322239274_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Cc5qvWaXB8kQ7kNvwEt3J5n&_nc_oc=Adl8A2A06OucPzFyXCndltXk_e70sT5nWykmG80ncTmRF8FLSOje53qXdOP96I_lAcEp2LotuoCip5OVzmDNkrnI&_nc_zt=23&_nc_ht=scontent.fdel65-2.fna&_nc_gid=SIHviwyhAg4qSDPkjIaW2g&oh=00_AfJHMh1BGnWSdzqoHEHuyOzKYdp-qrzWuKj7lV2q6qjhWQ&oe=683F49E3" alt="ccsu logo">
+            </div>
+            <h1 class="heading">CH. CHARAN SINGH UNIVERSITY, MEERUT
                 
+            </h1>
+
+        </div>
+        <h3 class="sub-heading">STATEMENT OF MARKS EXAMINATION</h3>
+        <h4 class="exam-date">Dec-2024</h4>
+        <h4 class="class">
+            Class/Course: BCA Sem-III
+        </h4>
+    
+        <div class="personal-details">
+            <p><span class="cname">Condidate Name :</span> <span class="name">Vikash Kuamr Mehta</span> <span class="croll">Roll No. :</span> <span class="roll">231110000645</span> </p>
+            <p><span class="cfname">Father's Name :</span><span class="fname">Sunil Kumar Mehta</span><span class="cenroll">Enroll Number : </span><span class="enroll">2310029161</span></p>
+            <p><span class="ccollege-name">Institution's Name :</span><span class="college-name">Meerut Institute of Technology, Meerut
+        </span></p>
+        </div>
+        
+
+        <div class="table">
+            <table>
+                <tbody>
                     <tr>
                         <th rowspan="2">Sr No.</th>
                         <th rowspan="2">Subject Code</th>
@@ -146,25 +123,57 @@
                         <td></td>
                         <td>36</td>
                         <td>36</td>
-                    </tr>
-                
-                
-
-               
-            </tbody>
+                    </tr>               
+                </tbody>
+                    
+                        <tr>
+                            <td colspan="7" style="text-align: center;"> <b>Total Marks</b></td>
+                            <td rowspan="2" ><b>445</b></td>
+                        </tr>
                 <tfoot>
                     <tr>
-                        <td colspan="7" style="text-align: center;"> <b>Total Marks</b></td>
-                        <td rowspan="2" >445</td>
-                    </tr>
-                    <tr>
-                        
+                        <td colspan="8">
+                            <table class="table2">
+                                <tbody class="table2">
+                                    <br> <br><br>
+                                    <tr>
+                                        <th></th>
+                                        <th>Max Marks</th>
+                                        <th>Min. Marks</th>
+                                        <th>Marks Obt.</th>
+                                        <th>Result</th>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Total</b></td>
+                                        <td>0600</td>
+                                        <td>0300</td>
+                                        <td>0445</td>
+                                        <td rowspan="3"><b>Pass</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>PRV. Total</b></td>
+                                        <td>1200</td>
+                                        <td>0600</td>
+                                        <td>0859</td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td><b>Grand Total</b></td>
+                                        <td>1800</td>
+                                        <td>0900</td>
+                                        <td>1304</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
                     </tr>
                 </tfoot>
+            </table>
             
-        </table>
+            <br><br><br>
 
-
+        </div>
 
     </div>
 </body>
