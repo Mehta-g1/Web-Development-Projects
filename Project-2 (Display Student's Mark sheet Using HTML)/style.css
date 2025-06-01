@@ -13,10 +13,12 @@ body{
 .main-box{
     background-color: #f5f7fa;
     padding-top:60px;
-    /* width: 75%; */
+    width: 100%;
     height: 100%;
 }
-
+.heading-box{
+    width:100%;
+}
 .heading{
     text-indent: 20px;
 }
@@ -51,6 +53,7 @@ body{
     bottom: 40px;
     font-weight: bold;
     line-height: 30px;
+    width:100%;
 }
 
 .cname,.cfname,.ccollege-name{
@@ -84,21 +87,44 @@ body{
     padding-left:70px;
 }
 table>tbody>tr>td{
-    padding-top:5px;
-    padding-bottom: 5px;
+    padding-left:3em;
+    padding-right:3em;
+    padding-top:0.4em;
+    padding-bottom: 0.4em;;
     text-align: center;
     border: 1px solid black;
+    font-size: 0.6em;
 }
 table>tbody>tr>th{
-    padding:10px;
+    /* padding:0.2em; */
+    padding: 1em;
     border: 1px solid black;
-
+    font-size: 0.65em;
 }
 .table2>tr>td{
-    padding-left: 95px;
-    padding-right: 95px;
-    margin-left: 40px;
-    margin-right: 40px;
+    /* padding-left: 3em;
+    padding-right: 3em; */
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+    /* padding:0.2em; */
     /* background-color: red; */
     border: 1px solid black;
+}
+
+table{
+    border-collapse: collapse;
+    border: 2px solid black;
+    width:100%
+}
+td>table{
+    width:99%;
+}
+table th{
+    background-color: #d6d4d4;
+}
+.table2{
+    margin: 5px;
+}
+table tr:nth-child(even){
+    background-color: #90c6f3;
 }
