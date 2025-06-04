@@ -1,0 +1,212 @@
+<h3><li>Syllabus</li></h3>
+
+            <p><b>Introduction to Python</b></p>
+            <ul>
+                <li>Evolution of Python Language</li>
+                <li>Version History</li>
+                <li>Installation and setup</li>
+                <li>PVM</li>
+                <li>How to develop and run Python programs</li>
+            </ul>
+
+            <p><b>Python Basics</b></p>
+            <ul>
+                <li>Comments</li>
+                <li>Data or Constants</li>
+                <li>Variables</li>
+                <li>Data Types</li>
+                <li>Memory Management</li>
+                <li>print Method</li>
+                <li>keywords</li>
+                <li>import</li>
+                <li>Type Conversion</li>
+                <li>Taking input from user</li>
+                <li>Operators</li>
+            </ul>
+
+            <p><b>Control Statements in Python</b></p>
+            <ul>
+                <li>Decision Control Statements</li>
+                <li>if statement</li>
+                <li>if else statement</li>
+                <li>if elif else</li>
+                <li>Nested if else</li>
+                <li>Single line if else</li>
+                <li>match statement</li>
+                <li>Iterative Control</li>
+                <li>while loop</li>
+                <li>reak, continue, pass</li>
+                <li>for loop</li>
+                <li>else with loop</li>
+                <li>Nested loop</li>
+                <li>Iterables in Python</li>
+                <li>range</li>
+                <li>list</li>
+                <li>str</li>
+                <li>tuple</li>
+                <li>set</li>
+                <li>dict</li>
+            </ul>
+            <p><b>Functions and Recursion</b></p>
+            <ul>
+                <li>Function Introduction</li>
+                <li>Function call vs Function Definition</li>
+                <li>Predefined and user-defined functions</li>
+                <li>Ways to define a function</li>
+                <li>Takes nothing returns nothing</li>
+                <li>Take Something returns nothing</li>
+                <li>Take nothing returns something</li>
+                <li>Take Something, Return Something</li>
+                <li>Default Arguments</li>
+                <li>Positional and keyword arguments</li>
+                <li>Variable Length Arguments</li>
+                <li>Recursion</li>
+                <li>Recursion Tree</li>
+                <li>Approach to recursive solution</li>
+                <li>Lambda expression</li>
+                <li>Recursive lambda expression</li>
+                <li>map, reduce, filter</li>
+            </ul>
+
+            <p><b>Object Oriented Programming</b></p>
+            <ul>
+                <li>Introduction to OOP</li>
+                <li>Main aspects of OOP</li>
+                <li>Classes</li>
+                <li>Objects</li>
+                <li>__init__() method</li>
+                <li>Types of functions</li>
+                <li>Types of variables</li>
+                <li>Inheritance</li>
+                <li>Types of inheritance</li>
+                <li>Name conflict issue</li>
+                <li>Polymorphism</li>
+                <li>Data Mingling</li>
+            </ul>   
+            <p><b>Exception handling</b></p> 
+            <ul>
+                <li>Introduction to Exceptions</li>
+                <li>Handling Exception</li>
+                <li>Default Exceptions</li>
+                <li>use of else in exception handling</li>
+                <li>raising exceptions</li>
+            </ul>
+            
+
+            <p><b>More in Python</b></p>
+            <ul>
+                <li>Iterator</li>
+                <li>Generator</li>
+                <li>Decorator</li>
+                <li>File Handling</li>
+            </ul>
+
+            <p><b>Interoduction to Web Development</b></p>
+            <ul>
+                <li>Client Server Architecture</li>
+                <li>History of Web</li>
+                <li>Front End and Back End</li>
+            </ul>
+
+            <p><b>HTML</b></p>
+            <ul>
+                <li>Introduction to HTML</li>
+                <li>HTML Document structure</li>
+                <li>Heading</li>
+                <li>Paragraph</li>
+                <li>Formatting Tags</li>
+                <li>title</li>
+                <li>comments</li>
+                <li>meta</li>
+                <li>anchor</li>
+                <li>image</li>
+                <li>lists</li>
+                <li>iFrames</li>
+                <li>div and span</li>
+                <li>block and inline</li>
+                <li>form</li>
+                <li>various input tags</li>
+            </ul>
+
+            <p><b>CSS</b></p>
+            <ul>
+                <li>Introduction to CSS</li>
+                <li>CSS Syntax</li>
+                <li>Ways to write CSS</li>
+                <li>Text properties</li>
+                <li>Background Properties</li>
+                <li>Border Properties</li>
+                <li>Anchor Properties</li>
+                <li>more Properties</li>
+                <li>Box model</li>
+                <li>margin, padding, height, width</li>
+                <li> Position property</li>
+                <li>Combinators</li>
+                <li>Pseudo Classes</li>
+                <li>Website Layout Design</li>
+                <li>Flexbox</li>
+            </ul>
+
+            <p><b>JavaScript</b></p>
+            <ul>
+                <li>Introduction to JavaScript</li>
+                <li>Basics of JS: variables, strings, object and arrays</li>
+                <li>Control Statements</li>
+                <li>Functions in JS</li>
+                <li>DOM</li>
+                <li>Events</li>
+                <li>Event Handling</li>
+                <li>Form Validation</li>
+                <li>Callback</li>
+                <li>Callback Hell</li>
+                <li>Promises</li>
+                <li>Promise Chaining</li>
+                <li>Async - await</li>
+                <li>fetch API</li>
+            </ul>
+            
+            <p><b>React</b></p>
+            <ul>
+                <li> Introduction to React</li>
+                <li>Installation</li>
+                <li>creating first react app</li>
+                <li>JSX</li>
+                <li>components</li>
+                <li>Props</li>
+                <li>Events</li>
+                <li>Conditionals</li>
+                <li>list</li>
+                <li>forms</li>
+                <li>React Router</li>
+                <li>Back End Development with Django</li>
+                <li> Django Introduction</li>
+                <li>Creating first project</li>
+                <li>Creating first app in the project</li>
+                <li>Defining views in the app</li>
+                <li>Multiple views in multiple apps</li>
+                <li>App level urls</li>
+                <li>Templates</li>
+                <li>Template Variables</li>
+                <li>Template Tags</li>
+                <li>Template Filters</li>
+                <li>Custom Template Tags and Filters</li>
+                <li>Database</li>
+                <li>Models</li>
+                <li>Make Migrations and Migrate</li>
+                <li>Admin App</li>
+                <li>using Forms</li>
+                <li>CRUD Operations</li>
+                <li>Session</li>
+                <li>Using React with Django</li> 
+            </ul>
+  
+
+            <p><b>Project Work</b></p>
+            <ul>
+                <li>At least 25 Projects throughout the course</li>
+                <li>Project work is another way to cover many topics like API</li>
+                <li>Use of Git and GitHub</li>
+
+            </ul>
+
+

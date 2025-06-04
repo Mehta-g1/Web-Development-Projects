@@ -1,0 +1,45 @@
+.top-container{
+    width:80%;
+    height: 50px ;
+    border: 1px solid black;
+    margin:0% 5% 0% 5%;
+}
+.nav-div{
+    display: flex;
+    
+}
+.logo-div{
+    /* background-color: #a79a9a; */
+    height: 50px;
+    width: 10%;
+
+}
+.logo-a{
+    height: 40%;
+    position: relative;
+    left: 20px;
+    top:3px;
+}
+
+.logo-img{
+    height: 40px;
+    background-color: white;
+}
+
+.search-div{
+    display: flex;
+    position: relative;
+    top: 15px;
+    height: 100%;
+}
+.search-div>div>input{
+    height: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.search-icon{
+    position: relative;
+    top: 3px;
+    right: 15px;
+}
