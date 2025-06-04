@@ -1,2 +1,0 @@
-<img class="img-* img-fluid rounded-5 border border-warning" width="40" src="photok.jpg"
-                                alt="Profile-image">
