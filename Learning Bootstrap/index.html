@@ -4,446 +4,885 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mehta_G (Vikash Kuamr Mehta) Coding Student </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <meta name="description" content="Vikash Kumar Mehta - BCA Student & Full Stack Developer Portfolio">
+    <meta name="keywords" content="Vikash Kumar Mehta, BCA Student, Full Stack Developer, Python, Web Development">
+    <title>Vikash Kumar Mehta - Full Stack Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 70px;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1a202c 100%);
+            color: #e2e8f0;
+            line-height: 1.6;
+            padding-top: 56px;
+        }
+
+        .navbar {
+            background: rgba(15, 23, 42, 0.9) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-link {
+            color: white !important;
+            margin: 0 5px;
+            padding: 8px 16px !important;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background: linear-gradient(45deg, #6366f1, #8b5cf6);
+            transform: translateY(-2px);
+        }
+
+        section {
+            padding: 80px 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #0f172a 0%, #1a202c 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .custom-card {
+            background: #1e293b;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .custom-card:hover {
+            transform: translateY(-10px);
+            border-color: #6366f1;
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);
+        }
+
+        .skill-item {
+            background: #1e293b;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 1.5rem;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-5px);
+            border-color: #6366f1;
+        }
+
+        .skill-icon {
+            font-size: 2.5rem;
+            background: linear-gradient(45deg, #6366f1, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(45deg, #6366f1, #8b5cf6);
+            border-radius: 2px;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid #6366f1;
+            box-shadow: 0 0 30px rgba(99, 102, 241, 0.3);
+            transition: all 0.3s ease;
+            object-fit: cover;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+            border-color: #8b5cf6;
+        }
+
+        .social-icon {
+            font-size: 20px;
+            box-shadow: 0 0 30px rgba(99, 102, 241, 0.3);
+            object-fit: cover;
+        }
+
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, #6366f1, #8b5cf6);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            opacity: 0;
+            transform: translateY(100px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .scroll-top.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-collapse {
+                background: rgba(15, 23, 42, 0.95);
+                padding: 1rem;
+                border-radius: 10px;
+                margin-top: 10px;
+            }
+
+            .nav-link {
+                margin: 5px 0;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .profile-img {
+                width: 150px;
+                height: 150px;
+                margin: 2rem auto;
+            }
+        }
+    </style>
 </head>
 
-<body class="bg-black">
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <h1><a class="navbar-brand text-primary fw-bolder" href="#home">Vikash Kumar Mehta</a></h1>
 
-    <!--============== Nav Bar ============= -->
-    <style>
-        @media (max-width: 991.98px) {
-
-            /* When navbar collapses (Bootstrap default breakpoint is lg = 992px) */
-            #Home .navbar-toggler {
-                background-color: white !important;
-                border-color: #ccc !important;
-                /* optional: light border */
-            }
-
-            /* Make the toggler icon visible on white background */
-            #Home .navbar-toggler-icon {
-                filter: invert(1);
-            }
-        }
-    </style>
-
-
-    <nav id="Home" class="navbar navbar-expand-lg bg-dark m-3 mb-0 rounded-2 p-3">
-        <div class="container-fluid">
-            <h1 class="navbar-brand text-warning"><a class="navbar-brand text-warning fw-bolder" href="#">Vikash Kuamr
-                    Mehta</a></h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ms-5">
-                    <li class="nav-item me-1">
-                        <a class="nav-link text-white border border-dark ps-4 pe-4 btn-secondary btn"
-                            aria-current="page" href="#Home">Home</a>
-                    </li>
-                    <li class="nav-item me-1">
-                        <a class="nav-link  text-white border border-dark ps-4 pe-4 btn-secondary btn"
-                            href="#about-me">About Me</a>
-                    </li>
-                    <li class="nav-item me-1">
-                        <a class="nav-link text-white border border-dark ps-4 pe-4 btn-secondary btn"
-                            aria-current="page" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item me-1">
-                        <a class="nav-link  text-white border border-dark ps-4 pe-4 btn-secondary btn"
-                            aria-current="page" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item me-1">
-                        <a class="nav-link  text-white border border-dark ps-4 pe-4 btn-secondary btn"
-                            aria-current="page" href="#Certification">Certification</a>
-                    </li>
-                    <li class="nav-item me-1">
-                        <a class="nav-link  text-white border border-dark ps-4 pe-4 btn-secondary btn"
-                            aria-current="page" href="#">Expriances</a>
-                    </li>
-                    <li class="nav-item me-1">
-                        <a class="nav-link text-white border border-dark ps-4 pe-4 btn-secondary btn"
-                            href="#">Projects</a>
-                    </li>
-                    <li class="nav-item me-1">
-                        <a class="nav-link  text-white border  border-dark ps-4 pe-4 btn-secondary btn"
-                            aria-current="page" href="#">Contact Me</a>
-                    </li>
-                    <li class="nav-item me-3">
-                        <button type="button" class="btn mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                            <img class="img-* img-fluid rounded-5 border border-warning" width="40" src="photok.jpg"
-                                alt="Profile-image">
-                        </button>
-                    </li>
 
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link border border-white" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border border-white" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border border-white" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border border-white" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border border-white" href="#certifications">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border border-white" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border border-white" href="#contact">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
-    </nav> <hr class="text-white">
+    </nav>
 
-    <!--  ========== Home Page ========== -->
-    <div class="container-fluid">
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img3.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img4.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img5.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content bg-dark">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5 text-white" id="staticBackdropLabel">Vikash Kuamr Mehta</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body ">
-                    <ul class="text-white">
-                        <li>
-                            I am a dedicated BCA student at Meerut Institute of Technology, passionate about
-                            learning computer applications.
-
-                        </li>
-                        <li>With a growing interest in programming, I have explored languages like C, C++, Python, and
-                            web
-                            development.</li>
-                        <li>I enjoy building practical projects that solve real problems, such as campus apps and
-                            data-driven
-                            tools.</li>
-                        <li> Motivated by curiosity and growth, I aim to become a skilled developer ready to take on
-                            tech
-                            challenges.</li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- ============= About Me =============== -->
-
-    <div class="container-fluid rounded-2" id="about-me">
-        <div class="card mt-3 r-3">
-            <!-- <img src="..." class="card-img-top" alt="..."> -->
-            <div class="card-body bg-dark">
-                <h4 class="card-title text-warning fw-bolder">About Me</h4>
-                <p class="card-text ">
-                <ul class="text-white">
-                    <li>
-                        I am a dedicated BCA student at Meerut Institute of Technology, passionate about
-                        learning computer applications.
-
-                    </li>
-                    <li>With a growing interest in programming, I have explored languages like C, C++, Python, and web
-                        development.</li>
-                    <li>I enjoy building practical projects that solve real problems, such as campus apps and
-                        data-driven
-                        tools.</li>
-                    <li> Motivated by curiosity and growth, I aim to become a skilled developer ready to take on tech
-                        challenges.</li>
-                </ul>
-                </p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-    </div>
-
-    <!-- ========= Education =================== -->
-    <div class="container-fluid" id="education">
-
-        <div class="accordion border border-white m-1 p-2 rounded-2 bg-dark" id="accordionExample">
-            <h3 class="text-warning fw-bold">Education Details</h3>
-            <div class="accordion-item bg-dark text-white rounded-2">
-                <h2 class="accordion-header bg-dark">
-                    <button class="accordion-button bg-dark text-warning" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <li>Degree in 10<sup>th</sup></li>
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show rounded-2"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body ">
-                        <ul>
-                            <li>
-                                <strong>School:</strong> <i>+2 High School Kariyadpur, Gaya (BIHAR).</i>
-                            </li>
-                            <li>
-                                <strong>Percentage:</strong> <i>62.4%</i>
-                            </li>
-                            <li>
-                                <strong>TIme-Stamp :</strong> <i>March 2019- April 2020</i>
-                            </li>
-                        </ul>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Hi, I'm Vikash Kumar Mehta</h1>
+                        <p class="hero-subtitle">Full Stack Developer & BCA Student</p>
+                        <p class="hero-description">
+                            Passionate about creating innovative web solutions using modern technologies.
+                            Currently pursuing BCA at Meerut Institute of Technology with expertise in
+                            Python, Django, React, and more.
+                        </p>
+                        <div class="mt-4">
+                            <a href="#projects" class="btn btn-outline-light me-3">View My Work</a>
+                            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        </div> 
+                        <div class="social-icons mt-4">
+                            <a href="https://github.com/Mehta-g1"
+                                class="social-icon mx-5 p-2 border-secondry rounded-3 bg-black">
+                                <i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/mehta-g1/"
+                                class="social-icon mt-0 m-2 p-2 border-secondry rounded-3 bg-black">
+                                <i class="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="accordion-item bg-dark text-white">
-                <h2 class="accordion-header bg-dark text-white rounded-2">
-                    <button class="accordion-button collapsed bg-dark text-warning" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                        aria-controls="collapseTwo">
-                        <li>12<sup>th</sup> by PCM (Physics, Chemistry, Mathematics)</li>
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse rounded-2" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <ul>
-                            <li>
-                                <strong>College:</strong> <i>Laloo Mandal College, Gaya (BIHAR)</i>
-                            </li>
-                            <li>
-                                <strong>Percentage:</strong> <i>58%</i>
-                            </li>
-                            <li>
-                                <strong>TIme-Stamp :</strong> <i>April 2020- May 2022</i>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="col-lg-4 text-center">
+                    <img src="photok.jpg" alt="Profile Image" class="profile-img">
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed bg-dark text-warning" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                        aria-controls="collapseThree">
-                        <li>BCA (Bachelor of Computer Application)</li>
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body bg-dark text-white">
-                        <ul>
-                            <li>
-                                <strong>College:</strong> <i>Meerut Institute of Technology, Meerut (U.P).</i>
-                            </li>
-                            <li>
-                                <strong>Percentage:</strong> <i>72.44%</i>
-                            </li>
-                            <li>
-                                <strong>TIme-Stamp :</strong> <i>June 2023-2026 (Expected)</i>
-                            </li>
-                        </ul>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container border-white">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                <div class="col-lg-12">
+                    <div class="custom-card p-4 fade-in-up">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4 class="text-warning mb-3">Passionate Developer & Lifelong Learner</h4>
+                                <p class="mb-3">
+                                    I am a dedicated BCA student at Meerut Institute of Technology with a passion for
+                                    creating innovative web solutions. My journey in computer applications has led me
+                                    to explore various programming languages and frameworks.
+                                </p>
+                                <p class="mb-3">
+                                    With expertise in C, C++, Python, and JavaScript, I enjoy building practical
+                                    projects that solve real-world problems. I'm particularly interested in full-stack
+                                    development and have experience with Django, React, and modern web technologies.
+                                </p>
+                                <p>
+                                    My goal is to become a skilled developer who can contribute meaningfully to the
+                                    tech industry while continuously learning and adapting to new technologies.
+                                </p>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <div class="row">
+                                    <div class="col-6 col-md-12 mb-3">
+                                        <div class="custom-card p-3">
+                                            <h3 class="text-primary">8+</h3>
+                                            <p class="text-success mb-0">Certifications</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-12 mb-3">
+                                        <div class="custom-card p-3">
+                                            <h3 class="text-primary">72.44%</h3>
+                                            <p class="text-success mb-0">Current CGPA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-
-    <!-- ============ Skills ==================== -->
-    <div class="container-fluid" id="skills">
-        <div class="card mt-3 r-3">
-            <!-- <img src="..." class="card-img-top" alt="..."> -->
-            <div class="card-body bg-dark">
-                <h5 class="card-title text-warning fw-bolder">Skills</h5>
-                <p class="card-text ">
-                <ul class="text-white">
-                    <li>
-                        <b>Programming Languages :</b> C, C++, Python, JavaScript.
-
-                    </li>
-                    <li><b>Database :</b> MySQL</li>
-                    <li><b>Library/Framework :</b> C++ - STL (Standard Template Library), Python - Streamlit, Django,
-                        Numpy, Pandas etc., JavaScript - React</li>
-                    <li> </li>
-                </ul>
-                </p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-    </div>
-    <!-- =========== Certifications ================= -->
+    <!-- Education Section -->
     <style>
-        .card-img-top {
-            width: 100%;
-            /* full width */
-            height: 450px;
-            /* fixed height */
-            object-fit: cover;
-            /* crop image to fit nicely */
+        .accordion-button.collapsed::after {
+            filter: brightness(0) invert(1);
+            /* white arrow when collapsed */
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            filter: brightness(0) invert(0);
+            /* black arrow when expanded */
         }
     </style>
-    <div class="container-fluid border border-white m-3 rounded-2 bg-dark" id="Certification">
-        <h3 class="text-warning bg-dark pt-3">Certifications</h3>
-        <hr class="text-white">
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col rounded-2">
-                <div class="card rounded-2">
-                    <img src="./Certificates/MOA.png" class="card-img-top rounded-2" alt="...">
-                    <div class="card-body bg-dark text-white">
-                        <h5 class="card-title text-warning">MOA (Multifunctional Office Associate)</h5>
-                        <p class="card-text">This certificate confirms that Vikash Sunil Kumar Mehta successfully
-                            completed the Multifunctional Office Associate course, totaling 345 hours, on
-                            09/06/2022. The training was conducted at Gaya Hosp Skill Development Training Center, under
-                            the <a href="https://www.pratham.org/"><code>Pratham Education Foundation</code></a> in
-                            partnership with <a href="https://nsdcindia.org/"><code>NSDC</code></a> and <a
-                                href="https://www.accenture.com/us-en"><code>Accenture</code></a>. <br><br><a
-                                target="_blank" class="btn btn-primary"
-                                href="https://drive.google.com/file/d/1xpLdqd7TVpU4Gu4C7GaVnOzQL3OUH_Vm/view?usp=drive_link">Click
-                                here for download</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card rounded-2">
-                    <img src="Certificates/ADCA.png" class="card-img-top" alt="...">
-                    <div class="card-body bg-dark text-white">
-                        <h5 class="card-title text-warning">ADCA (Advance Deploma in Computer Application)</h5>
-                        <p class="card-text">This certificate confirms that, I've successfully completed a 12-month
-                            Advanced Diploma in Computer Application (ADCA) from <a
-                                href="https://www.arcadecomputer.com/"><code>Arcade Computer Academy</code></a> in
-                            November
-                            2021. It reflects strong performance with an 'A' grade and is officially recognized under
-                            ISO 9001:2008 standards. <br><br><a target="_blank" class="btn btn-primary"
-                                href="https://drive.google.com/file/d/1eNXczgACv7sKrNU1cTQJbFmQEVJxYs83/view?usp=drive_link">Click
-                                here for download</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col" _>
-                <div class="card rounded-2">
-                    <img src="Certificates/STEM.png" class="card-img-top" alt="...">
-                    <div class="card-body bg-dark text-white">
-                        <h5 class="card-title text-warning">Digital Application Fundamentals - STEM </h5>
-                        <p class="card-text">This certificate confirms that I've cleared the assessment on Digital
-                            Application Fundamentals - STEM under the <a
-                                href="https://www.futureskillsprime.in/"><code>FutureSkills Prime</code></a> program by
-                            <a href="https://nasscom.in/"><code>NASSCOM</code></a> and the
-                            <a href="https://meity.gov.in/"><code>Ministry of Electronics & IT</code></a>. Issued on
-                            28/03/2025, it is marked Gold Category, indicating a
-                            score of 70% or above. <br><br><a target="_blank" class="btn btn-primary"
-                                href="https://drive.google.com/file/d/1kaLsjf9pnWW8pZt0LNizmFteU34G5DSH/view?usp=drive_link">Click
-                                here for download</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col" _>
-                <div class="card rounded-2">
-                    <img src="Certificates/AI-ML.png" height="500px" class="card-img-top" alt="...">
-                    <div class="card-body bg-dark text-white">
-                        <h5 class="card-title text-warning">10-week AI-ML Virtual Internship</h5>
-                        <p class="card-text">This certificate confirms that I've from <a
-                                href="https://mitmeerut.ac.in/"><code>Meerut Institute of Technology</code></a>
-                            successfully completed a 10-week AI-ML Virtual Internship from January to March 2025,
-                            organized by <a href="https://www.aicte-india.org/"><code>AICTE</code></a> and <a
-                                href="https://eduskillsfoundation.org/"><code>Eduskill</code></a>. The curriculum was
-                            provided by <a href="https://www.awsacademy.com/"><code>AWS Academy</code></a>, and the
-                            internship is recognized under the <a
-                                href="https://internship.aicte-india.org/"><code>National Internship Portal</code></a>
-                            by the Government of India. <br><br><a target="_blank" class="btn btn-primary"
-                                href="https://drive.google.com/file/d/1EL_S5qQcCjRYyx3Le01_VWODCq9aSggu/view?usp=drive_link">Click
-                                here for download</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col" _>
-                <div class="card rounded-2">
-                    <img src="Certificates/Python-full stack.png" class="card-img-top" alt="...">
-                    <div class="card-body bg-dark text-white">
-                        <h5 class="card-title text-warning">Python Full Stack Developer</h5>
-                        <p class="card-text">This certificate confirms that Vikash Kuamr Mehta has successfully
-                            completed the Python Full Stack course from <a
-                                href="https://eduskillsfoundation.org/"><code>Eduskill Academy</code></a>. It was
-                            awarded on 11 May
-                            2025, recognizing his proficiency in full stack development using Python technologies.
-                            <br><br><a target="_blank" class="btn btn-primary"
-                                href="https://drive.google.com/file/d/12BCHZYa_8qiVlNHBZZ4poGPCOHydp1Oc/view?usp=drive_link">Click
-                                here for download</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col" _>
-                <div class="card rounded-2">
-                    <img src="Certificates/mysirg python.png" class="card-img-top" alt="...">
-                    <div class="card-body bg-dark text-white">
-                        <h5 class="card-title text-warning">Full Stack Web Developer</h5>
-                        <p class="card-text">This certificate verifies that Vikash Kuamr Mehta has successfully
-                            completed the Full Stack Web Development Masterclass using Python & Django from <a
-                                href="https://premium.mysirg.com/"><code>MySirG.com</code></a>.
-                            The 6-month course was completed on 25-05-2025, under the instruction of <a
-                                href="https://saurabhshuklaclasses.com/"><code>Saurabh Shukla</code></a>. <br><br><a
-                                target="_blank" class="btn btn-primary"
-                                href="https://drive.google.com/file/d/12hnyJAFqmuNAOOi1wLq7H4Gz3dcsMwIe/view?usp=drive_link">Click
-                                here for download</a></p>
-                    </div>
-                </div> <br>
-            </div>
 
-            <div class="col" _>
-                <div class="card rounded-2">
-                    <img src="Certificates/speacking.png" class="card-img-top" alt="...">
-                    <div class="card-body bg-dark text-white">
-                        <h5 class="card-title text-warning">Effective Speaking and Listening</h5>
-                        <p class="card-text">This certificate confirms that I've successfully completed a 113-hour
-                            course on Effective Speaking and Listening Skills from the <a
-                                href="https://wadhwanifoundation.org/"><code>Wadhwani Foundation</code></a> and <a
-                                href="https://eduskillsfoundation.org/"><code>Eduskills</code></a>
-                            on November 19, 2024. It highlights his achievement in enhancing professional communication
-                            abilities.. <br><br><a target="_blank" class="btn btn-primary"
-                                href="https://drive.google.com/file/d/1IxLYPDEVgf3U6k_WguPoU-d9Nno6qkyA/view?usp=drive_link">Click
-                                here for download</a></p>
-                    </div>
+    <section id="education" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Education</h2>
                 </div>
             </div>
-            <div class="col" _>
-                <div class="card rounded-2">
-                    <img src="Certificates/DSA.png" class="card-img-top" alt="...">
-                    <div class="card-body bg-dark text-white">
-                        <h5 class="card-title text-warning">DSA (Data Structure and Algorithms) Using C++ Live Course
-                        </h5>
-                        <p class="card-text">This certificate confirms that Vikash Kuamr Mehta has successfully
-                            completed the course "Data Structures and Algorithms using C++" on MySirG.com, from 27 July
-                            2023 to 26 September 2023. It was issued and signed by instructor <a
-                                href="https://saurabhshuklaclasses.com/"><code>Saurabh Shukla</code></a> of <a
-                                href="https://premium.mysirg.com/"><code>Mysirg Education Services Pvt. Ltd.</code></a>
-                            <br><br><a class="btn btn-primary" target="_blank"
-                                href="https://drive.google.com/open?id=1J7EueThb7FSodo4lbhlWrm5KQYLnju3u&usp=drive_fs">Click
-                                here for download</a>
-                        </p>
+            <div class="accordion" id="educationAccordion">
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bg-dark text-warning" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#education1">
+                            <i class="fas fa-graduation-cap me-3 "></i>
+                            Bachelor of Computer Application (BCA) - Current
+                        </button>
+                    </h2>
+                    <div id="education1" class="accordion-collapse collapse show" data-bs-parent="#educationAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h5>Meerut Institute of Technology, Meerut (U.P)</h5>
+                                    <p class="text-white-50">June 2023 - 2026 (Expected)</p>
+                                    <p>Currently maintaining a <strong>72.44%</strong> CGPA while actively participating
+                                        in various programming and development activities.</p>
+                                </div>
+                                <div class="col-md-4 text-end">
+                                    <div class="badge bg-success fs-6">72.44%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-warning" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#education2">
+                            <i class="fas fa-school me-3"></i>
+                            12th Grade - PCM (Physics, Chemistry, Mathematics)
+                        </button>
+                    </h2>
+                    <div id="education2" class="accordion-collapse collapse" data-bs-parent="#educationAccordion">
+                        <div class="accordion-body bg-dark text-white">
+                            <div class="row ">
+                                <div class="col-md-8 ">
+                                    <h5>Laloo Mandal College, Gaya (Bihar)</h5>
+                                    <p class="text-white-50">April 2020 - May 2022</p>
+                                    <p>Completed intermediate education with focus on science subjects, building a
+                                        strong foundation for computer science studies.</p>
+                                </div>
+                                <div class="col-md-4 text-end">
+                                    <div class="badge bg-primary fs-6">58%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-warning" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#education3">
+                            <i class="fas fa-school me-3"></i>
+                            10th Grade
+                        </button>
+                    </h2>
+                    <div id="education3" class="accordion-collapse collapse" data-bs-parent="#educationAccordion">
+                        <div class="accordion-body bg-dark text-white">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h5>+2 High School Kariyadpur, Gaya (Bihar)</h5>
+                                    <p class="text-white-50">March 2019 - April 2020</p>
+                                    <p>Completed secondary education with good academic performance, laying the
+                                        groundwork for future studies.</p>
+                                </div>
+                                <div class="col-md-4 text-end">
+                                    <div class="badge bg-info fs-6">62.4%</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <br><br>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-        crossorigin="anonymous"></script>
-</body>
+    </section>
 
-</html>
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Skills & Technologies</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h5>Python</h5>
+                        <p class="text-white-50">Django, Flask, NumPy, Pandas</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h5>JavaScript</h5>
+                        <p class="text-white-50">React, ES6+, DOM Manipulation</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h5>C/C++</h5>
+                        <p class="text-white-50">STL, Data Structures, Algorithms</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h5>MySQL</h5>
+                        <p class="text-white-50">Database Design, Queries, Optimization</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h5>Web Technologies</h5>
+                        <p class="text-white-50">HTML5, CSS3, Bootstrap</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h5>Data Analysis</h5>
+                        <p class="text-white-50">Streamlit, Data Visualization</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <h5>Version Control</h5>
+                        <p class="text-white-50">Git, GitHub, Collaboration</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h5>AI/ML</h5>
+                        <p class="text-white-50">Machine Learning Basics, AWS</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Certifications</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="custom-card p-4 h-100">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="skill-icon me-3">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-warning">10-week AI-ML Virtual Internship</h5>
+                                <p class="text-white-50 mb-2">AICTE & Eduskill Foundation - Jan 2025 to Mar 2025</p>
+                                <p class="small">Completed comprehensive AI-ML training with AWS Academy curriculum,
+                                    recognized under National Internship Portal.</p>
+                            </div>
+                        </div>
+                        <a href="https://drive.google.com/open?id=1EL_S5qQcCjRYyx3Le01_VWODCq9aSggu&usp=drive_fs"
+                            class="btn btn-outline-info ms-5" target="_blank">View Certificate</a>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="custom-card p-4 h-100">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="skill-icon me-3">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-warning">Python Full Stack Developer</h5>
+                                <p class="text-white-50 mb-2">Eduskill Academy - May 2025</p>
+                                <p class="small">Comprehensive full stack development course covering Python, Django,
+                                    and modern web technologies.</p>
+                            </div>
+                        </div>
+                        <a href="https://drive.google.com/open?id=12BCHZYa_8qiVlNHBZZ4poGPCOHydp1Oc&usp=drive_fs"
+                            class="btn btn-outline-info ms-5" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="custom-card p-4 h-100">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="skill-icon me-3">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-warning">Full Stack Web Developer</h5>
+                                <p class="text-white-50 mb-2">MySirG.com - May 2025</p>
+                                <p class="small">6-month masterclass in Full Stack Web Development using Python & Django
+                                    by Saurabh Shukla.</p>
+                            </div>
+                        </div>
+                        <a href="https://drive.google.com/open?id=12hnyJAFqmuNAOOi1wLq7H4Gz3dcsMwIe&usp=drive_fs"
+                            class="btn btn-outline-info ms-5" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="custom-card p-4 h-100">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="skill-icon me-3">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-warning">DSA Using C++</h5>
+                                <p class="text-white-50 mb-2">MySirG.com - Jul 2023 to Sep 2023</p>
+                                <p class="small">Comprehensive course on Data Structures and Algorithms using C++ with
+                                    live instruction.</p>
+                            </div>
+                        </div>
+                        <a href="https://drive.google.com/open?id=1J7EueThb7FSodo4lbhlWrm5KQYLnju3u&usp=drive_fs"
+                            class="btn btn-outline-info ms-5" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="custom-card p-4 h-100">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="skill-icon me-3">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-warning">ADCA</h5>
+                                <p class="text-white-50 mb-2">Arcade Computer Academy - Nov 2021</p>
+                                <p class="small">Advanced Diploma in Computer Application with 'A' grade, ISO 9001:2008
+                                    certified.</p>
+                            </div>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1eNXczgACv7sKrNU1cTQJbFmQEVJxYs83/view?usp=drive_link"
+                            class="btn btn-outline-info ms-5" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="custom-card p-4 h-100">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="skill-icon me-3">
+                                <i class="fas fa-microphone"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-warning">Effective Speaking & Listening</h5>
+                                <p class="text-white-50 mb-2">Wadhwani Foundation - Nov 2024</p>
+                                <p class="small">113-hour course on professional communication skills and effective
+                                    presentation techniques.</p>
+                            </div>
+                        </div>
+                        <a href="https://drive.google.com/open?id=1IxLYPDEVgf3U6k_WguPoU-d9Nno6qkyA&usp=drive_fs"
+                            class="btn btn-outline-info ms-5" target="_blank">View Certificate</a>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="custom-card p-4 h-100">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="skill-icon me-3">
+                                 <i class="fa fas fa-building" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-warning">Multifunctional Office Associate</h5>
+                                <p class="text-white-50 mb-2">Pratham Education Foundation - June 2022</p>
+                                <p class="small">
+                                    I've successfully completed the Multifunctional
+                                    Office Associate (MEP/Q0205) Course, covering 345 hours of training in office
+                                    operations, computer applications, and workplace management at Gaya Hosp Skill
+                                    Development Training Center.</p>
+                            </div>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1xpLdqd7TVpU4Gu4C7GaVnOzQL3OUH_Vm/view?usp=drive_link"
+                            class="btn btn-outline-info ms-5" target="_blank">View Certificate</a>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="custom-card p-4 h-100">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="skill-icon me-3">
+                                <i class="fa fas fa-file-code" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-warning">Digital Application Fundamentals - STEM</h5>
+                                <p class="text-white-50 mb-2">FutureSkill Prime and NASSCOM - March 2025</p>
+                                <p class="small">
+                                    The Digital Application Fundamentals - STEM certificate showcases foundational
+                                    knowledge and skills in digital applications, aligned with industry standards, and
+                                    signifies the ability to clear a nationally-recognized assessment with a gold
+                                    category score (70% and above).</p>
+                            </div>
+                        </div>
+                        <a href="https://drive.google.com/open?id=1kaLsjf9pnWW8pZt0LNizmFteU34G5DSH&usp=drive_fs"
+                            class="btn btn-outline-info ms-5" target="_blank">View Certificate</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="custom-card h-100">
+                        <img src="fixmycampus.jpg" alt="FixMyCampus Image" class="project-img w-100">
+                        <div class="p-4">
+                            <div class="skill-icon mb-3">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h5 class="text-warning mb-3">FixMyCampus</h5>
+                            <p class="text-white-50 mb-3">A web-based platform designed to streamline the reporting and
+                                management of campus-related issues, primarily using HTML, Python, and JavaScript. It
+                                enables users to submit complaints and track their resolution status efficiently.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-2 p-2">HTML, CSS, JavaScript</span>
+                                <span class="badge bg-secondary me-2 p-2">Flask, Python</span>
+                                <span class="badge bg-info p-2">MySQL</span>
+                            </div>
+                            <a href="https://github.com/Mehta-g1/FixMyCampus"
+                                class="btn btn-custom btn-sm text-info border border-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="custom-card h-100">
+                        <img src="bms.jpg" alt="Bank Management System image" class="project-img w-100">
+                        <div class="p-4">
+                            <div class="skill-icon mb-3">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h5 class="text-warning mb-3">Bank Management System</h5>
+                            <p class="text-white-50 mb-3">This project is a Bank Management System implemented in C,
+                                designed to manage essential banking operations and customer data. It provides a simple
+                                interface for handling transactions, account management, and related banking activities.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-2">C language</span>
+                                <!-- <span class="badge bg-secondary me-2">Streamlit</span>
+                                <span class="badge bg-info">Plotly</span> -->
+                            </div>
+                            <a href="https://github.com/Mehta-g1/BANK-MANAGEMENT-SYSTEM"
+                                class="btn btn-custom btn-sm text-info border-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="custom-card h-100">
+                        <img src="to-do.jpg" alt="To Do List Image" class="project-img w-100">
+                        <div class="p-4">
+                            <div class="skill-icon mb-3">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <h5 class="text-warning mb-3">To Do List</h5>
+                            <p class="text-white-50 mb-3">This project is a simple command-based To-Do list application
+                                written in Python. It helps users manage their daily tasks efficiently from the command
+                                line.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-2">Python</span>
+                                <!-- <span class="badge bg-secondary me-2">JavaScript</span>
+                                <span class="badge bg-info">PostgreSQL</span> -->
+                            </div>
+                            <a href="https://github.com/Mehta-g1/To-Do-List"
+                                class="btn btn-custom btn-sm text-info border-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Get In Touch</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="custom-card p-4 h-100">
+                        <h4 class="text-warning mb-4">Contact Information</h4>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0">Email</h6>
+                                <p class="mb-0">vikash.kumarmehta.bca.2023@mitmeerut.ac.in</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0">Phone</h6>
+                                <p class="mb-0">+91 72504 06015</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0">Location</h6>
+                                <p class="mb-0">Meerut, Uttar Pradesh, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0">GitHub</h6>
+                                <p class="mb-0">https://github.com/mehta-g1</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0">LinkedIn</h6>
+                                <p class="mb-0">https://www.linkedin.com/in/mehta-g1/</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="custom-card p-4 h-100">
+                        <h4 class="text-warning mb-4">Send a Message</h4>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Your Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5"
+                                    placeholder="Enter your message"></textarea>
+                            </div>
+                            <button type="submit" disabled
+                                class="btn btn-warning w-100 text-black border-white fw-bold">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <h5 class="mb-3">Vikash Kumar Mehta</h5>
+                    <p class="text-white-50 mb-3">Full Stack Developer & BCA Student</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/mehta-g1" class="social-icon  p-1 rounded-3 mt-2 mx-3"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mehta-g1/" class="social-icon   p-1 rounded-3 mt-2 mx-3"><i
+                                class="fab fa-linkedin-in"></i></a> <br>
+                        <!-- <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a> -->
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-4 mt-md-0"> <br>
+                    <p class="mb-0">&copy; 2025 Vikash Kumar Mehta. All rights reserved.</p>
+                    <p class="text-white-50">Designed & Developed with <i class="fas fa-heart text-danger"></i></p>
+                </div>
+            </div>
+        </div> <br><br><br>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Bootstrap & JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
