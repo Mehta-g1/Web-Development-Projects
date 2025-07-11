@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project -9 (Responsive layout Design Using Flexbox)</title>
+    <style>
+        body{
+            background-color: #212121;
+            color:#fff;
+            font-family: Arial, Helvetica, sans-serif;
+            margin:0;
+            padding: 0;
+
+        }
+        header,nav,main,aside,footer{
+            padding: 20px;
+            text-align: center;
+        }
+
+        header{
+            background-color: #333;
+            color: #fff;
+        }
+        nav{
+            background-color: #666;
+            color: #fff;
+        }
+        main{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        section{
+            flex: 1;
+            background-color: #f0f0f0;
+            margin: 10px;
+            padding: 20px;
+            color: black;
+            
+        }
+        aside{
+            background-color: #999;
+            color: white;
+
+        }
+        footer{
+            background-color: #333;
+            color:#fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+    <nav>Navigation</nav>
+    <main>
+        <section>Section 1
+            <h1>Heading 1</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam dicta ipsam id quod laboriosam in animi accusantium enim perspiciatis magni. Corrupti quam sequi dolorem accusamus sit reiciendis excepturi illo alias est minima in, earum maiores sint optio eum veritatis beatae. Nisi non tempore officiis, rerum harum deserunt asperiores nemo dolorum!</p>
+        </section>
+
+        <section>Section 2
+            <h1>Heading 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quaerat nam repellat a nihil eius corporis temporibus dolorem incidunt. Eum nulla dolores nostrum libero. Quos, assumenda aperiam? Animi ex modi, doloribus sed asperiores, rem, totam repudiandae eaque doloremque nesciunt praesentium amet blanditiis adipisci consectetur esse quo dolore molestiae quasi. Sed.</p>
+        </section>
+
+        <section>Section 3
+            <h1>Heading 3</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus fugiat quis mollitia veritatis perferendis, saepe tenetur nobis optio totam deleniti libero, facilis aspernatur illum. Quibusdam asperiores architecto minus pariatur iste inventore aliquam commodi doloribus voluptatem quas porro, soluta est harum provident voluptates officia corporis enim reprehenderit ea facilis, consectetur numquam!</p>
+        </section>
+    </main>
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+</body>
+<script>
+
+</script>
+
+</html>
