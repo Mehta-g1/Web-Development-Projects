@@ -1,0 +1,111 @@
+body {
+    background-color: #212121;
+    color: #e5e5e5;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main-box {
+    width: 100%;
+    max-width: 320px;
+    padding: 15px;
+}
+
+.container {
+    border: 2px solid #7e7d7d;
+    border-radius: 12px;
+    background-color: #2b2626;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.container h2 {
+    margin-bottom: 20px;
+}
+
+.container div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.container div span {
+    flex: 1;
+    margin: 8px;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Highlight for glassy effect */
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 2px rgba(0,0,0,0.5); /* Text pop effect */
+    transition: all 0.15s ease;
+    background-color: #3c3c3c; /* Darker base for number buttons */
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.container div span:active, .active-key {
+    transform: scale(0.95);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.output {
+    border: 1px solid #5b5a5a;
+    height: 70px;
+    border-radius: 8px;
+    background-color: #464545;
+    margin: 0 5px 20px 5px !important;
+    cursor: text;
+    color: #fff;
+    text-align: right !important;
+    font-size: 40px;
+    justify-content: flex-end !important;
+    align-items: center;
+    padding: 10px;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.3);
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* --- Glassy Button Styles --- */
+
+.equal {
+    background-image: linear-gradient(to bottom, #4dabf7, #1e88e5) !important;
+}
+
+.AC {
+    background-image: linear-gradient(to bottom, #ff7063, #e53935) !important;
+    font-size: 24px !important; /* Making AC button font size smaller */
+    padding:8px !important;
+}
+
+.percentage, .back, .division, .mul, .sub, .add {
+    background-image: linear-gradient(to bottom, #ffab40, #ff9100) !important;
+}
+
+i {
+    font-size: 20px;
+}
+
+/* --- Responsive Design --- */
+
+@media (max-width: 400px) {
+    .container div span {
+        font-size: 24px;
+        padding: 12px;
+    }
+    .AC {
+        font-size: 20px;   /* Adjust AC button for smaller screens */
+    }
+    .output {
+        font-size: 36px;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1></h1>
+    </div>
+    <div class="main-box">
+        <div class="container">
+            <h2>Digital Calculator</h2>
+            <div class="output">0</div>
+            <div class="first-row">
+                <span class="AC" onclick="Clicked(document.querySelector('.AC'))">AC</span>
+                <span class="percentage" onclick="Clicked(document.querySelector('.percentage'))">%</span>
+                <span class="back" onclick="Clicked(document.querySelector('.back'))"><i class="fas fa-backspace"></i></span>
+                <span class="division" onclick="Clicked(document.querySelector('.division'))"><i class="fas fa-divide"></i></span>
+            </div>
+            <div class="second-row">
+                <span class="seven" onclick="Clicked(document.querySelector('.seven'))">7</span>
+                <span class="eight" onclick="Clicked(document.querySelector('.eight'))">8</span>
+                <span class="nine" onclick="Clicked(document.querySelector('.nine'))">9</span>
+                <span class="mul" onclick="Clicked(document.querySelector('.mul'))"><i class="fas fa-times"></i></span>
+            </div>
+            <div class="third-line">
+                <span class="four" onclick="Clicked(document.querySelector('.four'))">4</span>
+                <span class="five" onclick="Clicked(document.querySelector('.five'))">5</span>
+                <span class="six" onclick="Clicked(document.querySelector('.six'))">6</span>
+                <span class="sub" onclick="Clicked(document.querySelector('.sub'))"><i class="fa-solid fa-minus"></i></span>
+            </div>
+            <div class="fourth-line">
+                <span class="one" onclick="Clicked(document.querySelector('.one'))">1</span>
+                <span class="two" onclick="Clicked(document.querySelector('.two'))">2</span>
+                <span class="three" onclick="Clicked(document.querySelector('.three'))">3</span>
+                <span class="add" onclick="Clicked(document.querySelector('.add'))"><i class="fa-solid fa-plus"></i></span>
+            </div>
+            <div class="fifth-row">
+                <span class="zero2" onclick="Clicked(document.querySelector('.zero2'))">00</span>
+                <span class="zero" onclick="Clicked(document.querySelector('.zero'))">0</span>
+                <span class="dot" onclick="Clicked(document.querySelector('.dot'))">.</span>
+                <span class="equal" onclick="Clicked(document.querySelector('.equal'))">=</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
