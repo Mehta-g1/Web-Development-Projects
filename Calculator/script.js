@@ -103,7 +103,7 @@ function Clicked(element) {
 
 // --- Event Listeners ---
 
-// Add click listeners to all buttons
+// Add click listeners to all buttons only if not already added
 buttons.forEach(button => {
     button.addEventListener('click', () => Clicked(button));
 });
