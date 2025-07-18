@@ -95,6 +95,45 @@ i {
     font-size: 20px;
 }
 
+.back-btn {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ff9100;
+  height: 30px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+.back-btn i{
+    text-align: center;
+  justify-content: center;
+  position: relative;
+  top:7px;
+}
+.back-btn::after {
+  content: "Go Back to Project List Page";
+  position: absolute;
+  top: 120%; /* below the icon */
+  left: 50%;
+  transform: translateX(-80%) translateY(-230%);;
+  /* transform: translateY(-250%); */
+  background-color: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 999;
+}
+
+.back-btn:hover::after {
+  opacity: 1;
+}
+
 /* --- Responsive Design --- */
 
 @media (max-width: 400px) {
