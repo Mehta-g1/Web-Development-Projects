@@ -36,55 +36,114 @@ This repository serves two purposes:
 - **Version Control:** Git & GitHub
 - **Other Tools:** As I progress, I continue to explore and include new libraries and frameworks.
 
----
+## 🌐 Live Project Showcase
+
+You can view all projects live at:  
+[https://web-development-projects-xi.vercel.app/index.html](https://web-development-projects-xi.vercel.app/index.html)
+
+Explore the deployed versions to see each project in action!
 
 ## 📂 Directory Structure
 
 Each project is contained within its own folder and includes all relevant files (HTML, images, scripts, etc.). Below is a sample structure:
 
-```
-+---Project-1 (HTML Formatting Mastery)
-|       Project.jpg
-|       index.html
-|       pic.jpg
-|
-+---Project-2 (Display Student's Mark sheet Using HTML)
-|       Project.jpg
-|       index.html
-|       image.png
-|
-+---Project-3 (MySirG batch detail page)
-|       Project.jpg
-|       index.html
-|
-+---Project-4 (MySirG All Batches Page)
-|       Project.jpg
-|       index.html
-|
-+---Project-5 (Customer Feedback Form)
-|       Project.jpg
-|       index.html
-|
-+---Project-6 (Personal Portfolio website)
-|       Project-6.jpg
-|
-+---Project-7 (HTML iFrame Showcase)
-|       Project-7.jpg
-|
-+---Project-8 (Form Craft)
-|       Project-8.jpg
-|
-+---Project-9 (Responsive Layout Design Using FlexBox)
-|       Project-9.jpg
-|
-\---Project-10 (E-Commerce website Design)
-        Project.jpg
+```Directory Structure
+Web Projects
+│
+│   README.md
+│   index.html
+│   styles.css
+│   script.js
+│
+├───Project-1 (HTML Formatting Mastery)
+│       Project.jpg
+│       index.html
+│       pic.jpg
+│       style.css
+│       Readme.md
+│
+├───Project-2 (Display Student's Mark sheet Using HTML)
+│       Project.jpg
+│       index.html
+│       style.css
+│       Readme.md
+│       Chaudhary Charan Singh University logo.jpg
+│
+├───Project-3 (MySirG batch detail page)
+│       Project.jpg
+│       index.html
+│       temp.txt
+│       style.css
+│       image.png
+│
+├───Project-4 (MySirG All Batches Page)
+│       Project.jpg
+│       index.html
+│
+├───Project-5(Customer Feedback Form)
+│       Project.jpg
+│       index.html
+│
+├───Project-6 (Personal Portfolio website)
+│       Project-6.jpg
+│       index.html
+│       photok.jpg
+│       to-do.jpg
+│       bms.jpg
+│       fixmycampus.jpg
+│       main.js
+│
+├───Project-7 (HTML iFrame Showcase)
+│       Project-7.jpg
+│       index.html
+│       style.css
+│
+├───Project-8 (From Craft)
+│       Project-8.jpg
+│       index.html
+│       style.css
+│
+├───Project-9 (Responsive Layout Design Using FlexBox)
+│       Project-9.jpg
+│       index.html
+│
+├───Project-10 (E-Commerce website Design)
+│       Project.jpg
+│       product_desc.html
+│       styles.css
+│       product_list.html
+│
+├───Learning Bootstrap
+│   │   index.html
+│   │   photok.jpg
+│   │   to-do.jpg
+│   │   bms.jpg
+│   │   fixmycampus.jpg
+│   │   main.js
+│   │
+│   └───Certificates
+│           ADCA.png
+│           MOA.png
+│           STEM.png
+│           AI-ML.png
+│           Python-full stack.png
+│           mysirg python.png
+│           speacking.png
+│           DSA.png
+│
+├───Calculator (Working)
+│       index.html
+│       style.css
+│       script.js
+│
+└───Project-11 (Appealing Contact Us Form With HTML and CSS)
+        project.png
         index.html
+        style.css
 
 and more projects are coming...
-```
 
----
+```
 
 ## 🚀 Goals
 
