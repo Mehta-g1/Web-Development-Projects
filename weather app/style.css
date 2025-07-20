@@ -11,10 +11,11 @@ body {
 
 .card {
     width: 90%;
-    max-width: 470px;
+    max-width: 570px;
     background: linear-gradient(135deg, #00feba, #5b548a);
     color: #fff;
-    margin: 100px auto 0;
+    margin: 50px auto 0;
+    margin-top:20px;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
@@ -26,7 +27,11 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-
+.note{
+    color:rgb(231, 25, 10);
+    font-style: italic;
+    font-size: 14px;
+}
 .search input {
     border: 0;
     outline: 0;
@@ -95,4 +100,27 @@ body {
 .humidity,
 .wind {
     font-size: 28px;
+}
+
+
+.time{
+    display: flex;
+    justify-content:space-between;
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top:15px ;
+    color:red;
+    display: none;
+}
+
+.error p{
+    text-shadow: 2px 3px 10px red;
 }

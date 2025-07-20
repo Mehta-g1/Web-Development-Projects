@@ -4,31 +4,66 @@ const api_url = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=
 const search = document.querySelector(".search input")
 const btn = document.querySelector(".search button")
 const weather_icon = document.querySelector(".weather-icon")
+let data;
+
+function convertUnixToLocal(unixTimestamp, offsetInSeconds) {
+    const indiaOffset = 19800; 
+    const indiaDate = new Date((unixTimestamp + indiaOffset) * 1000);
+    return indiaDate.toLocaleTimeString("en-IN", {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true 
+    });
+}
 
 async function chackWeather(city) {
     const responce = await fetch(api_url + city + `&appid=${api_key}`)
-    let data = await responce.json()
+    if (responce.status == 404) {
+        document.querySelector(".error").style.display = "block";
+        document.querySelector(".weather").style.display = "none";
 
-    document.querySelector(".city").innerHTML = data.name;
-    document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
-    document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
-    document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
-    // data.weather[0].main = "drizzle"
-    if (data.weather[0].main == "Clouds") {
-        weather_icon.src = "/weather app/images/clouds.png"
-    } else if (data.weather[0].main == "Clear") {
-        weather_icon.src = "/weather app/images/clear.png"
-    } else if (data.weather[0].main == "Rain") {
-        weather_icon.src = "/weather app/images/rain.png"
-    } else if (data.weather[0].main == "Drizzle") {
-        weather_icon.src = "/weather app/images/drizzle.png"
-    } else if (data.weather[0].main == "Mist") {
-        weather_icon.src = "/weather app/images/mist.png"
+    } else {
+        data = await responce.json()
+        console.log(data)
+
+
+        let sunrise = data.sys.sunrise
+        let sunset = data.sys.sunset
+        let timezone = data.timezone
+        let current = data.dt;
+        document.querySelector(".sunrise").innerHTML = convertUnixToLocal(sunrise, timezone)
+        document.querySelector(".sunset").innerHTML = convertUnixToLocal(sunset, timezone)
+        document.querySelector(".current").innerHTML = convertUnixToLocal(current, timezone)
+
+
+
+        document.querySelector(".city").innerHTML = data.name;
+        document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
+        document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
+        document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
+        // data.weather[0].main = "drizzle"
+        console.log(data.weather[0].main)
+        if (ddata.weather[0].main.toLowerCase() == "clouds") {
+            weather_icon.src = "images/clouds.png"
+        } else if (data.weather[0].main.toLowerCase() == "clear") {
+            weather_icon.src = "images/clear.png"
+        } else if (data.weather[0].main.toLowerCase() == "rain") {
+            weather_icon.src = "images/rain.png"
+        } else if (data.weather[0].main.toLowerCase() == "drizzle") {
+            weather_icon.src = "images/drizzle.png"
+        } else if (data.weather[0].main.toLowerCase() == "mist") {
+            weather_icon.src = "images/mist.png"
+        }
+
+        document.querySelector(".weather").style.display = "block";
+        document.querySelector(".error").style.display = "none";
+
     }
+
 }
 
 btn.addEventListener('click', () => {
     chackWeather(search.value)
 })
 
-// chackWeather()
+
