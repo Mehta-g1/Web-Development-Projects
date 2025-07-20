@@ -43,7 +43,7 @@ async function chackWeather(city) {
         document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
         // data.weather[0].main = "drizzle"
         console.log(data.weather[0].main)
-        if (ddata.weather[0].main.toLowerCase() == "clouds") {
+        if (data.weather[0].main.toLowerCase() == "clouds") {
             weather_icon.src = "images/clouds.png"
         } else if (data.weather[0].main.toLowerCase() == "clear") {
             weather_icon.src = "images/clear.png"
