@@ -11,16 +11,24 @@
 </head>
 
 <body>
+
     <div class="card">
+        <!-- <br> -->
         <div class="search">
+            <h3>
+                <a href="../index.html" class="back-btn">
+                    <i class="fa-solid fa-arrow-left fa-bounce" style="color: #f7f6f5;"></i>
+                </a>
+            </h3>
             <input type="text" name="" id="" placeholder="Enter City Name" ,spellcheck="false">
             <button><img src="images/search.png" alt=""></button>
         </div>
         <div class="error">
-            <p>Invalid City Name !</p>
+            <p>City name not found. Please try again!</p>
         </div>
         <div class="weather">
-            <img src="images/rain.png" class="weather-icon" alt="">
+            <img src="./images/rain.png" class="weather-icon" alt="">
+            <h3 class="weather-data"></h3>
             <h1 class="temp">--°C</h1>
             <h2 class="city">----- ---</h2> <br>
             <div class="time">
@@ -58,14 +66,9 @@
                         target="_blank" style="text-decoration: underline dotted;"> @Mehta_G</a></p>
             </div><br>
             <hr>
-            <br>
-            <h3>
-            <a href="../index.html" class="back-btn">
-                <i class="fa-solid fa-arrow-left fa-bounce" style="color: #f7f6f5;"></i>
-            </a>
-        </h3>
+
         </div>
-        
+
     </div>
 </body>
 <script src="script.js"></script>
