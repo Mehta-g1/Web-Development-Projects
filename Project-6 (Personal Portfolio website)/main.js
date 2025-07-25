@@ -1,22 +1,17 @@
 // Wait for DOM content to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Navbar scroll effect
     const navbar = document.querySelector('.navbar');
-    
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            navbar.style.padding = '10px 0';
-            navbar.style.backgroundColor = 'rgba(15, 23, 42, 0.95)';
-        } else {
-            navbar.style.padding = '15px 0';
-            navbar.style.backgroundColor = 'rgba(15, 23, 42, 0.8)';
-        }
-    });
 
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+
+            this.classList.add('active');
             
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
@@ -78,25 +73,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // Run animation check on load and scroll
     animateOnScroll();
     window.addEventListener('scroll', animateOnScroll);
-
-    // Scroll to top button
-    const scrollTopBtn = document.createElement('button');
-    scrollTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
-    scrollTopBtn.className = 'scroll-top';
-    document.body.appendChild(scrollTopBtn);
-
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 300) {
-            scrollTopBtn.classList.add('active');
-        } else {
-            scrollTopBtn.classList.remove('active');
-        }
-    });
-
-    scrollTopBtn.addEventListener('click', function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
 });
