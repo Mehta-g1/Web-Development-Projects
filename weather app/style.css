@@ -114,9 +114,9 @@ body {
     justify-content:space-between;
 }
 
-/* .weather{
+.weather{
     display: none;
-} */
+}
 .back-btn {
   position: relative;
   margin-bottom: 0;
