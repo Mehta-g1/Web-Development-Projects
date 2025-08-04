@@ -32,5 +32,5 @@ A simple, interactive To-Do List web app that lets you add, mark, and delete tas
 
 ## About the Developer
 
-This project was developed by **Vikash Kumar Mehta**, a passionate web developer with a keen interest in building interactive and user-friendly web applications. Vikash enjoys exploring new technologies and creating projects that solve real-world problems.  
+This project was developed by **Vikash Kumar Mehta**, a passionate web developer.
 You can connect with him on [LinkedIn](https://www.linkedin.com/in/mehta-g1/) or check out more of his work on [GitHub](https://github.com/mehta-g1).
