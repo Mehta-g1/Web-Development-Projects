@@ -1,0 +1,37 @@
+.container{
+    max-width:400px;
+    margin: 50px auto;
+    padding:20px;
+    border: 1px solid #816a6a;
+    border-radius: 10px;
+    background-color: #bd7;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+
+}
+input{
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+
+}
+button{
+    padding:10px 20px;
+    background-color: green;
+    border-radius: 5px;
+
+}
+#error-message{
+    padding: 10px;
+    margin-top:10px;
+    background-color: #ec8f8f;
+    display: none;
+}
